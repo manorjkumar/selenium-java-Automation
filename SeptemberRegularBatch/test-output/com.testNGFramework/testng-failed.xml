@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [com.testNGFramework]">
+  <test name="FlipkartAss_productselect(failed)">
+    <classes>
+      <class name="com.testNGFramework.FlipkartAss">
+        <methods>
+          <include name="b_selectproduct"/>
+        </methods>
+      </class> <!-- com.testNGFramework.FlipkartAss -->
+    </classes>
+  </test> <!-- FlipkartAss_productselect(failed) -->
+</suite> <!-- Failed suite [com.testNGFramework] -->

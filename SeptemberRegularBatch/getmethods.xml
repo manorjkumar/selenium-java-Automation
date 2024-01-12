@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="com.testNGFramework">
+  <test name="GetMethods_OpenURL">
+    <classes>
+      <class name="com.testNGFramework.GetMethods"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="petstoreoctoper_OpenUrl_UserInfo">
+    <classes>
+      <class name="com.testNGFramework.petstoreoctoper"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="MouseActionRightClick_Openurl">
+    <classes>
+      <class name="com.testNGFramework.MouseActionRightClick"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="PromptPopupAss_handledpopus">
+    <classes>
+      <class name="com.testNGFramework.PromptPopupAss"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="similerElements_get_titles">
+    <classes>
+      <class name="com.testNGFramework.similerElements"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="SwagLab_login_Userinfo_Selectprodict">
+    <classes>
+       <class name="com.testNGFramework.SwagLab"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="DemoBlazeContactpage">
+    <classes>
+      <class name="com.testNGFramework.MouseActionsAssDemoBlazeContactpage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="MouseActionsDraganandDrop_handled">
+    <classes>
+      <class name="com.testNGFramework.MouseActionsDraganandDrop"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  </suite> <!-- Suite -->

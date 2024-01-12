@@ -1,0 +1,55 @@
+package com.testNGFramework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class petstoreoctoper {
+	WebDriver driver;
+
+		@Test(priority=1)
+		public  void pageLoad() {
+		System.setProperty("webdriver.chrome.driver","D:\\\\selenium\\\\software\\\\chromedriver_win32\\\\chromedriver.exe");
+	    driver=new ChromeDriver();
+		driver.get("https://petstore.octoperf.com/actions/Account.action?newAccountForm=");
+		driver.manage().window().maximize();
+		}
+		@Test(priority=2)
+		public void Userinfo() throws InterruptedException {
+		driver.findElement(By.name("username")).sendKeys("12345");
+		driver.findElement(By.name("password")).sendKeys("password");
+		Thread.sleep(4000);
+		driver.findElement(By.name("repeatedPassword")).sendKeys("password");
+		}
+		@Test(priority=3)
+		public void accoundinfo() {
+		driver.findElement(By.name("account.firstName")).sendKeys("manoj");
+		driver.findElement(By.name("account.lastName")).sendKeys("kumar");
+		driver.findElement(By.name("account.email")).sendKeys("manoramu39@gmail.com");
+		driver.findElement(By.name("account.phone")).sendKeys("8610520937");
+		driver.findElement(By.name("account.address1")).sendKeys("velacherry");
+		driver.findElement(By.name("account.address2")).sendKeys("tambaram");
+		driver.findElement(By.name("account.city")).sendKeys("chennai");
+		driver.findElement(By.name("account.state")).sendKeys("tamilnadu");
+		driver.findElement(By.name("account.zip")).sendKeys("636813");
+		driver.findElement(By.name("account.country")).sendKeys("india");
+		}
+		@Test(priority=4)
+		public void profileinfo() {
+		Select language = new Select(driver.findElement(By.name("account.languagePreference")));
+		language.selectByVisibleText("english");
+		Select product = new Select(driver.findElement(By.name("account.favouriteCategoryId")));
+		product.selectByVisibleText("DOGS");
+		WebElement MyListRadioButton= driver.findElement(By.name("account.listOption"));
+		MyListRadioButton.click();
+		WebElement MyListBanner= driver.findElement(By.name("account.bannerOption"));
+		MyListBanner.click();
+		driver.findElement(By.name("newAccount")).click();
+		}
+		
+	}
+
+

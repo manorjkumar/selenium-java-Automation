@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="com.testNGFramework">
+  <test name="petstoreoctoper_User_Registration_Flow">
+    <classes>
+       <class name="com.testNGFramework.petstoreoctoper"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="SwagLab_login_productSelect">
+    <classes>
+       <class name="com.testNGFramework.SwagLab"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="AlertPopupAss_okClick">
+    <classes>
+      <class name="com.testNGFramework.AlertPopupAss"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Example_AllIN_one_Program">
+    <classes>
+       <class name="com.testNGFramework.AllInOneProgramDemoBlazeProduct"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="PromptPopupAss_handling_Example">
+    <classes>
+      <class name="com.testNGFramework.PromptPopupAss"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="similerElements_GetTitles">
+    <classes>
+      <class name="com.testNGFramework.similerElements"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="WindowsHamdlingAss_ForFlipkart">
+    <classes>
+      <class name="com.testNGFramework.WindowsHamdlingAss"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="tutorialsninja_UserIfo">
+    <classes>
+      <class name="com.testNGFramework.yourstore"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
